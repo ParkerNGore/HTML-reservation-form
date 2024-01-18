@@ -11,9 +11,9 @@
       <h1>Reservation</h1>
       <form>
         <form action="https://httpbin.org/post" method="post">
-          <input name="f_name" type="text" placeholder="First Name" />
-          <input name="l_name" type="text" placeholder="Last Name" />
-          <input name="email" type="email" placeholder="Email" />
+          <input required name="f_name" type="text" placeholder="First Name" />
+          <input required name="l_name" type="text" placeholder="Last Name" />
+          <input required name="email" type="email" placeholder="Email" />
           <input name="p_number" type="tel" placeholder="Phone Number" />
           <label name="start_date">Start Date:</label>
           <input
@@ -43,6 +43,12 @@
           </label>
 
           <input id="submit" type="submit" />
+          <footer>
+            <div>801-123-4567</div>
+            <br />
+            <div>123 Main Street,</div>
+            Salt Lake City, Utah 84116
+          </footer>
         </form>
       </form>
     </div>
