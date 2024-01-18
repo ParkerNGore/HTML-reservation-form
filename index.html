@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Reservation</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Reservation</h1>
+      <form>
+        <form action="https://httpbin.org/post" method="post">
+          <input name="f_name" type="text" placeholder="First Name" />
+          <input name="l_name" type="text" placeholder="Last Name" />
+          <input name="email" type="email" placeholder="Email" />
+          <input name="p_number" type="tel" placeholder="Phone Number" />
+          <label name="start_date">Start Date:</label>
+          <input
+            name="s_date"
+            id="start_date"
+            type="date"
+            placeholder="Start Date"
+          />
+          <label name="end_date">End Date:</label>
+          <input id="e_date" id="end_date" type="date" placeholder="End Date" />
+          <label name="rental_car">Rental Car? <input type="checkbox" /></label>
+          <label name="hotel">Hotel? <input type="checkbox" /></label>
+          <label for="show">Other Accomodations?</label>
+          <input type="checkbox" id="show" />
+          <textarea
+            type="text"
+            id="content"
+            placeholder="Accomodations"
+          ></textarea>
+          <label for="packages"
+            >Choose a package:
+
+            <select name="packages" id="packages">
+              <option value="Basic">Basic</option>
+              <option value="Premium">Premium</option>
+            </select>
+          </label>
+
+          <input id="submit" type="submit" />
+        </form>
+      </form>
+    </div>
+  </body>
+</html>
